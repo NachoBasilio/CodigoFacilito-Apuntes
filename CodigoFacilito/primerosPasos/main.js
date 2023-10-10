@@ -1,11 +1,10 @@
 import "./main.css";
 const app = document.getElementById('app');
 
-const texto = document.createElement('h1');
 
-texto.innerText = 'Hola Mundo';
-//Agrega las clases text-3xl font-bold underline
 
-texto.classList.add('text-3xl', 'font-bold', 'underline');
-
-app.appendChild(texto);
+app.innerHTML = `
+  <div class="container lg:bg-red-400  sm:bg-green-400">
+    <h1>Hello World</h1>
+  </div>
+`;
