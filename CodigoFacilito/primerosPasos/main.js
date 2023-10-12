@@ -28,9 +28,14 @@ app.innerHTML = `
       <div class="row-span-4 bg-slate-500">
         Buenas
       </div>
-      <div class="transition duration-300 trasnform hover:scale-75 hover:rotate-12 bg-slate-500">
+      <div class="transition duration-300 trasnform hover:scale-75 hover:rotate-12 bg-emerald-300">
         Buenas
       </div>
+      <div class="flex">
+        <div class="flex-grow-2">Este elemento crecerá más</div>
+        <div class="flex-grow">Este elemento crecerá</div>
+        <div class="flex-shrink-2">Este elemento se encogerá más</div>
+        </div>
     </div>
   
   </div>
