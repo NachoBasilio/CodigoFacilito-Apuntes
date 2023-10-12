@@ -10,6 +10,12 @@ app.innerHTML = `
     <h2 class="bg-indigo-400 xl:my-2" > Hola a todos</h2>
     <button class="bg-indigo-400 px-4 py-2 hover:bg-indigo-500 hover:text-indigo-50" >Hover me</button>
     <input type="text" class="focus:bg-blue-400 focus:text-blue-50 pl-2">
+    <p class="text-left text-red-300">Buenas</p>
+    <p class="text-center font-bold">Buenas</p>
+    <p class="text-right overline">Buenas</p>
+    <p class="text-justify">Buenas</p>
+    <p class="text-start">Buenas</p>
+    <p class="text-end">Buenas</p>
     <div class=" h-screen bg-no-repeat bg-center" style="background-image: url('https://picsum.photos/seed/picsum/200/300')">  </div>
   </div>
 `;
