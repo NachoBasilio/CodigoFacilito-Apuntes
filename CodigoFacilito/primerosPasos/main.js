@@ -28,7 +28,7 @@ app.innerHTML = `
       <div class="row-span-4 bg-slate-500">
         Buenas
       </div>
-      <div class=" bg-slate-500">
+      <div class="transition duration-300 trasnform hover:scale-75 hover:rotate-12 bg-slate-500">
         Buenas
       </div>
     </div>
