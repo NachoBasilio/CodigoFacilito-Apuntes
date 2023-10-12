@@ -17,5 +17,21 @@ app.innerHTML = `
     <p class="text-start">Buenas</p>
     <p class="text-end">Buenas</p>
     <div class=" h-screen bg-no-repeat bg-center" style="background-image: url('https://picsum.photos/seed/picsum/200/300')">  </div>
+
+    <div class="grid grid-cols-4 grid-rows-4 gap-4">
+      <div>
+        Buenas
+      </div>
+      <div class="bg-green-600 gap-14 col-span-4">
+        Buenas
+      </div>
+      <div class="row-span-4 bg-slate-500">
+        Buenas
+      </div>
+      <div class=" bg-slate-500">
+        Buenas
+      </div>
+    </div>
+  
   </div>
 `;
