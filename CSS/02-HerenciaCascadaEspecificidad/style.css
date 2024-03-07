@@ -1,0 +1,43 @@
+.title{
+    color: blue;
+}
+
+.title {
+    color: red;
+}
+
+/* la cascada nos dice que se van a aplicar los estilos de la ultima vez que llamemos a esa clase */
+
+
+.title{
+    color: blue;
+    color: aqua;
+}
+/* Lo mismo pasa con lo que esta dentro de una sentencia */
+
+
+
+.title{
+    color: red;
+}
+
+h2{
+    color: blue;
+}
+
+/* La especificidad hace que se aplique lo de el llamado de clase */
+
+/* Selector de tipo, Pseudoelementos :: - 1 */
+/* Selector de clases, Pseudoclases :, [] - 10 */
+/* Selector de ID - 100 */
+
+
+body{
+    color: blueviolet;
+}
+
+a{
+    color: inherit;
+}
+
+/* Con inherit podemos heredar algunas cosas de los padres, no todo se puede */
