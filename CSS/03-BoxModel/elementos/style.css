@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.element{
+    width: 250px;
+    height: 250px;
+    background-color: purple;
+    border: 20px solid steelblue;
+    padding: 30px;
+    margin: auto;
+}
