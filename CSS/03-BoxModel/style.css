@@ -1,11 +1,11 @@
-.caja{
-    background-color: yellow;
-    width: 200px;
-    height: 200px;
-    padding: 20px;
+.main{
+    background-color: steelblue;
+    color: white;
+    margin-bottom: 20px;
+}
 
-    border-color: aqua;
-    border-style: solid none none solid;
-
-    border-width: 20px;
+.footer{
+    background-color: slateblue;
+    color: white;
+    margin-top: 30px;
 }
