@@ -5,7 +5,18 @@
 }
 
 .title{
-    margin: 70px;
+    margin-top: 70px;
     color: white;
-    background-color: black;
+    font-size: 60px;
+    text-align: center;
+}
+
+.background{
+    height: 600px;
+ 
+    background-image: linear-gradient(rgba(255, 105, 189, 0.527), rgba(70, 131, 180, 0.527)), url('https://www.w3schools.com/w3images/paris.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: .1px;
 }
