@@ -1,0 +1,57 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container{
+    max-width: 600px;
+    padding: 40px 20px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: slateblue;
+    color: white;
+
+}
+
+.animu{
+    width: 400px;
+    height: 400px;
+    background-image: url("./Animu.png");
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+
+.title{
+    /* letter-spacing: 20px; */
+    /* word-spacing: 40px; */
+    /* width: 150px; */
+
+    hyphens: auto;
+    overflow-wrap: break-word;
+    text-align: start;
+    font-weight: 800;
+    line-height: 1.2;
+    font-size: 50px;
+}
+
+.paragraph{
+    text-transform: uppercase;
+}
+
+.paragraph--first{
+    text-transform: lowercase;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+
