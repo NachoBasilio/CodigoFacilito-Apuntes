@@ -49,6 +49,7 @@ body{
     max-width: 700px;
     margin: 0 auto;
     margin-bottom: 40px;
+    order: 1;
 }
 
 .hero-title{
