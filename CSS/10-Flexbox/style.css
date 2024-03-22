@@ -28,14 +28,18 @@ body{
     line-height: 100px;
     width: 100px;
     height: 100px;
+    
 }
 
 .element1{
     background-color: #f00;
+
 }
 
 .element2{
     background-color: #0f0;
+    order: 1;
+    /* Order es de menor a mayor */
 }
 
 .element3{
