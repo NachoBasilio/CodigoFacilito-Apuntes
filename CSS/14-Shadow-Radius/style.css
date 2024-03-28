@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.element{
+    margin: 80px auto;
+    width: 200px;
+    height: 200px;
+    background-color: #f1c40f;
+    color: #393113;
+    
+    box-shadow: 0px 0px 10px currentColor, -100px 200px; 
+    /* Se pueden agregar mas de una sombra separandolas por coma */
+
+    border-radius: 50%;
+}
