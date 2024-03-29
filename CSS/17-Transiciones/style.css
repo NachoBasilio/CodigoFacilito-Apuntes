@@ -12,6 +12,7 @@
     transition-property: all; /* A que propiedad se le va a aplicar la transición */
     transition-duration: 1s; /* Duración de la transición */
     transition-timing-function: ease; /* Función de tiempo */
+    transition-delay: 0s; /* Tiempo de espera antes de que se ejecute*/
 }
 
 .container:hover .element{
