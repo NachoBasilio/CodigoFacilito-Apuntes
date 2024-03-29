@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.element{
+    width: 300px;
+    height: 300px;
+    background-color: #3498db;
+    margin: 60px;
+    /* transform: translate(100px, 20px); */
+    transform: rotate(45deg);
+}
+
+/* Al usar transform no modificamos la posición de los demás elementos */
+.element2{
+    width: 300px;
+    height: 300px;
+    background-color: #db7134;
+
+    transform: unset;
+}
