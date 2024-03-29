@@ -62,18 +62,48 @@ body{
 }
 
 .element{
-    width: 200px;
-    height: 200px;
-    background-color: coral;
-    margin-left: 40px;
-    transition: .3s;
+    width: max-content;
+    padding: 20px;
+    background-color: steelblue;
+    color: white;
+    font-size: 30px;
+    margin: 60px;
 } 
 
-.element:hover{
+/* .element:hover{
     width: 300px;
 }
 
 .element:target{
     background-color:black;
     translate: 100%;
+} */
+
+.input{
+    display: block;
+    margin: 20px;
+    padding: 16px;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.input:focus{
+    border: 2px solid #3498db;
+    color: white;
+    background-color: #3498db;
+}
+
+.input:focus + .label{
+    color: #3498db;
+}
+
+.label{
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.check:checked + .label{
+    color: red;
 }
