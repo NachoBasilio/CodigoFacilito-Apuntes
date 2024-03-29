@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button{
+    margin: 50px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding:  20px 0;
+    text-align: center;
+    width: 200px;
+    transition: 1s all;
+}
+
+.btn-blue + .btn-tomato{
+    /* esto hace referencia al hermano adyacente, pero solo al hermano de btn-blue */
+    background-color: black;
+}
+
+
+
+.btn-red{
+    background-color: #e74c3c;
+}
+
+.btn-blue{
+    background-color: #3498db;
+}
+
+.btn-tomato{
+    background-color: tomato;
+}
+
+.element{
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    margin-left: 40px;
+} 
+
+.btn-red + *{
+    /* esto hace referencia al hermano adyacente */
+    background-color: green;
+}
+
+/* .btn-blue:hover + .btn-red{
+    background-color: yellow;
+} */
+
+.btn-blue:hover ~ .btn-red{
+    /* esto hace referencia a todos los hermanos con la misma clase */
+    transform: translate(100%);
+}
