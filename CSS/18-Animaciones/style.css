@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.element{
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    margin: 60px;
+    border-radius: 50%;
+
+    animation-name: crecer;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards; /* Para que se quede en el último estado, sus valores son forwards, backwards, both, none. Respectivamente, se queda en el último estado, se queda en el primer estado, se queda en ambos estados, no se queda en ningún estado */
+    animation-play-state: running; /* Para pausar la animación, sus valores son paused, running. Respectivamente, pausa la animación, corre la animación */
+
+
+    animation: crecer 2s ease infinite alternate forwards running; /* Forma abreviada de las propiedades anteriores */
+}
+
+
+@keyframes crecer{
+    0% {
+    transform: scale(1);
+    }
+
+    20%{
+        transform: scale(1.2)  translate(100px);
+    }
+
+    40%{
+        transform: scale(1.4)  translate(100px, 100px);
+    }
+
+    60%{
+        transform: scale(1.6) translate(0, 100px);
+    }
+
+    80%{
+        transform: scale(1.8) translate(0, 0);
+    }
+
+    100%{
+        transform: scale(2) translate(100px);
+    }
+}
+
+
+@keyframes color-magico{
+    from{
+        background-color: #3498db;
+    }
+
+
+
+    to{
+        background-color: #e74c3c;
+    }
+}
