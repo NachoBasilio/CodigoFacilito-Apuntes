@@ -107,3 +107,13 @@ body{
 .check:checked + .label{
     color: red;
 }
+
+/* solo se puede crear un pseudo elemento en un elemento */
+
+.element::after{
+    content: "Hola";
+    display: block;
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+}
