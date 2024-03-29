@@ -29,6 +29,11 @@ body{
     background-color: #e74c3c;
 }
 
+
+.btn-red:hover{
+    transform: scale(1.2);
+}
+
 .btn-blue{
     background-color: #3498db;
 }
@@ -37,12 +42,10 @@ body{
     background-color: tomato;
 }
 
-.element{
-    width: 200px;
-    height: 200px;
-    background-color: coral;
-    margin-left: 40px;
-} 
+.btn-tomato:active{
+    font-size: 30px;
+}
+
 
 .btn-red + *{
     /* esto hace referencia al hermano adyacente */
@@ -56,4 +59,21 @@ body{
 .btn-blue:hover ~ .btn-red{
     /* esto hace referencia a todos los hermanos con la misma clase */
     transform: translate(100%);
+}
+
+.element{
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    margin-left: 40px;
+    transition: .3s;
+} 
+
+.element:hover{
+    width: 300px;
+}
+
+.element:target{
+    background-color:black;
+    translate: 100%;
 }
