@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.element{
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    margin: 60px;
+
+    transition-property: all; /* A que propiedad se le va a aplicar la transición */
+    transition-duration: 1s; /* Duración de la transición */
+    transition-timing-function: ease; /* Función de tiempo */
+}
+
+.container:hover .element{
+    background-color: black;
+    transform: translate(100px, 200px);
+}
