@@ -82,5 +82,121 @@ body{
 
 .main__arrows{
     height: 40%;
+}
 
+.main__buy{
+    grid-area: buy;
+}
+
+.main__content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.main__title{
+    color: var(--black);
+}
+
+.main__arrow{
+    width: 100px;
+    margin-left: 20px;
+}
+
+.main__paragraph{
+    line-height: 1.5;
+    margin: 1em 0 2em;
+    color: var(--dark-gray)
+}
+
+.main__paragraph--about{
+    margin: 1em 0 0 0;
+}
+
+.main__cta{
+    text-decoration: none;
+    color: var(--very-dark-gray);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: flex;
+    align-items: center;
+}
+
+
+.main__bg{
+    grid-area: image1;
+    min-height: 250px;
+    height: 100%;
+    background-image: url("https://images.hola.com/imagenes/decoracion/20221228223572/mesa-de-comedor-ideas-decoracion-il/1-182-672/decorar-mesa-comedor-diario-01t-t.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.main__about{
+    grid-area: about;
+
+}
+
+.main__bg--second{
+    grid-area: image2;
+    background-image: url("https://dcdn.mitiendanube.com/stores/001/028/736/products/comedor_capitone_sillas_cabeceras_umma71-b765414318a8fa524416693102267796-640-0.jpg");
+}
+
+@media (min-width: 768px){
+    .container{
+        width: 85%;
+        padding: 70px 0;
+    }
+
+    .main{
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-areas: 
+            "main main main main buy buy buy"
+            "main main main main buy buy buy"
+            "main main main main buy buy buy"
+            "image1 image1 about about about image2 image2"
+            "image1 image1 about about about image2 image2"
+        ;
+    }
+
+    .main__controls{
+        grid-area: buy;
+        justify-self: start;
+    }
+
+    .main__hamburguer{
+        display: none;
+    }
+
+    .main__links{
+        padding: 0;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 1em;
+        margin-left: 10%;
+
+    }
+
+    .main__lists{
+        list-style: none;
+    }
+
+    .main__link{
+        color: var(--white);
+        text-decoration: none;
+    }
+
+    .main__logo{
+        margin: 0;
+        height: 50px;
+        width: 50px;
+    }
+
+    .main__nav{
+        align-items: center;
+    }
 }
