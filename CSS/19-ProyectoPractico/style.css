@@ -1,0 +1,86 @@
+:root{
+    --dark-gray: hsl(0, 0%, 63%);
+    --black : hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --very-dark-gray: hsl(0, 0%, 27%);
+}
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "League Spartan", sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.main{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,max-content);
+    grid-template-areas: 
+    "main"
+    "buy"
+    "image1"
+    "about"
+    "image2"
+    ;
+}
+
+.main__hero{
+    min-height: 500px;
+    background-image: url("https://st3.idealista.com/news/archivos/styles/fullwidth_xl/public/2019-07/casa_california_dormitorio.png?VersionId=7OPKl.bP4IXP0SCfctrC727L7YoVTk5P&itok=gX2aAVy8");
+    background-size: cover;
+    background-position: center;
+    grid-area: main;
+}
+
+
+.main__nav{
+    display: flex;
+}
+
+.main__links{
+    display: none;
+}
+
+.main__hamburguer{
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.main__logo{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.main__controls{
+    justify-self: end ;
+    align-self: end;
+    grid-area: main;
+    background-color: var(--white);
+    display: flex;
+    width: 100px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    border : 1px solid var(--dark-gray);
+}
+
+.main__arrows{
+    height: 40%;
+
+}
